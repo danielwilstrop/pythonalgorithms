@@ -6,7 +6,7 @@ def factorial(i):
     else:
         return i * factorial(i - 1)
 
-#Tests
 
+#Tests
 print(factorial(5))  #Prints 120
 print(factorial(20))  #Prints 2432902008176640000
