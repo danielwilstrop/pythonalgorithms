@@ -6,7 +6,7 @@ def quicksort(array):
         return array
     else:
         random_index = random.randint(0, len(array) -1)
-        pivot = array[0]
+        pivot = array[random_index]
         less = [i for i in array[1:] if i <= pivot]
         greater = [i for i in array[1:] if i > pivot]
 
