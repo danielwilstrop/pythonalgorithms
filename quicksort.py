@@ -1,9 +1,11 @@
 #Quicksort Implementaions with Python
+import random
 
 def quicksort(array):
     if len(array) <= 1:
         return array
     else:
+        random_index = random.randint(0, len(array) -1)
         pivot = array[0]
         less = [i for i in array[1:] if i <= pivot]
         greater = [i for i in array[1:] if i > pivot]
